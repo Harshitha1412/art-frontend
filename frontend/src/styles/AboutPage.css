@@ -1,0 +1,63 @@
+.about-page {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  .about-image-section {
+    margin-bottom: 20px;
+  }
+  
+  .about-image {
+    width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 400px; /* Set a maximum height for better layout */
+    object-fit: cover; /* Ensure the image covers the area */
+  }
+  
+  .about-section {
+    margin-bottom: 40px;
+    opacity: 0; /* Start invisible */
+    transform: translateY(20px); /* Start slightly lower */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Transition effect */
+  }
+  
+  .about-section.fade-in {
+    opacity: 1; /* Fade in */
+    transform: translateY(0); /* Move to original position */
+  }
+  
+  .about-section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .about-section p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #555;
+  }
+  
+  .about-section ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  .team-members {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .team-member {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    width: calc(33.33% - 20px); /* Three members in a row */
+  }
+  
+  .team-member h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+  }
+  

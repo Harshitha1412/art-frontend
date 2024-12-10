@@ -1,0 +1,103 @@
+
+.page-content {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+  
+  h2 {
+    color: #555;
+    font-size: 20px;
+    margin-top: 24px;
+    margin-bottom: 12px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 6px;
+  }
+  
+  /* Settings Section Layout */
+  .settings-section {
+    margin-bottom: 20px;
+  }
+  
+  .settings-section label {
+    display: block;
+    font-size: 14px;
+    color: #444;
+    margin-bottom: 6px;
+    font-weight: bold;
+  }
+  
+  .settings-section input[type="text"],
+  .settings-section input[type="file"],
+  .settings-section input[type="number"],
+  .settings-section select,
+  .settings-section input[type="checkbox"] {
+    padding: 8px;
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 12px;
+    box-sizing: border-box;
+  }
+  
+  /* Checkbox Styling */
+  .settings-section input[type="checkbox"] {
+    width: auto;
+    transform: scale(1.2);
+    cursor: pointer;
+    margin-right: 8px;
+  }
+  
+  .settings-section input[type="file"] {
+    padding: 6px;
+  }
+  
+  /* Save Button */
+  button {
+    padding: 10px 16px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+    width: 100%;
+  }
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .page-content {
+      padding: 15px;
+    }
+  
+    h1 {
+      font-size: 20px;
+    }
+  
+    h2 {
+      font-size: 18px;
+    }
+  
+    button {
+      font-size: 14px;
+      padding: 8px 12px;
+    }
+  }
+  

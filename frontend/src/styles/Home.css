@@ -1,0 +1,168 @@
+/* General body styling */
+body {
+    background-color: white;
+    color: black;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Carousel styles */
+.carousel {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-item {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: opacity 1s ease;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* New Arrivals Section */
+.new-arrivals-section {
+    width: 100%;
+    padding: 40px 20px;
+    background-color: #f0e9e9;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.new-arrivals-section h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Card container and hover effect */
+.blocks {
+    display: flex;
+    flex-wrap: wrap; /* Allow blocks to wrap on smaller screens */
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Space between blocks */
+    padding: 20px;
+    width: 100%; /* Ensure it's responsive */
+    border-radius: 150px;
+    background: rgb(84, 63, 63);
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease;
+}
+
+.block {
+    width: 150px;
+    height: 150px;
+    display: grid;
+    place-items: center;
+    background: #fff; /* Block background color */
+    border: 2px solid white; /* Proper white outline for each block */
+    border-radius: 12px; /* Ensures outline matches block shape */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.block:hover {
+    transform: scale(1.1); /* Scales the block when hovered */
+    z-index: 1; /* Ensure it stays on top when hovered */
+}
+
+/* Block item styling */
+.block__item {
+    width: 100%;
+    aspect-ratio: 1;
+    border-radius: var(--radius-3);
+    background: var(--bg), var(--surface-1);
+    display: inline-block;
+    transition: transform 0.3s ease;
+    transform-origin: center center;
+    position: relative;
+    transform: scale(1); /* Initially normal scale */
+}
+
+.block__item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: var(--radius-3);
+    transition: transform 0.3s ease;
+}
+
+/* When hovering over a block, the image zooms */
+.block:hover .block__item img {
+    transform: scale(1.0); /* Zoom in the image */
+}
+
+/* Scaling down other blocks when one is hovered */
+.blocks .block:not(:hover) {
+    transform: scale(0.8); /* Scale down non-hovered blocks */
+}
+
+/* Hover effect for zooming in the hovered image only */
+.block:hover .block__item img {
+    transform: scale(0.); /* Zooms in the image */
+}
+
+/* Optional: Adjust other blocks outside hover */
+.blocks .block:not(:hover) .block__item img {
+    transform: scale(0.9); /* Scale down the other images */
+}
+
+/* Variables for themes and animations */
+:root {
+    --size-1: 2px;
+    --size-2: 16px;
+    --size-4: 32px;
+    --radius-3: 12px;
+    --text-1: #fff;
+    --surface-1: rgba(255, 255, 255, 0.7);
+    --gray-0: #fff;
+    --lerp-0: 1;
+    --lerp-1: 0.5625;
+    --lerp-2: 0.25;
+    --lerp-3: 0.0625;
+    --lerp-4: 0;
+}
+
+/* Responsive design for smaller devices */
+@media (max-width: 768px) {
+    .blocks {
+        gap: 10px; /* Adjust gap for smaller devices */
+        padding: 10px; /* Adjust padding */
+    }
+    .block {
+        width: 120px; /* Adjust block size for small screens */
+        height: 120px;
+    }
+
+    .carousel {
+        height: 250px; /* Reduce carousel size for mobile */
+    }
+    
+    .new-arrivals-section h2 {
+        font-size: 1.5rem; /* Reduce title size */
+    }
+    
+    .block__item img {
+        object-fit: contain; /* Make sure the image doesn't overflow */
+    }
+    
+    /* Adjust the hover effect for small screens */
+    .block:hover {
+        transform: scale(1.05); /* Slightly smaller scale on mobile */
+    }
+
+    .blocks .block:not(:hover) {
+        transform: scale(1); /* Remove scale down effect on mobile */
+    }
+}

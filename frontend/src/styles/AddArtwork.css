@@ -1,0 +1,67 @@
+ .add-artwork {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background: url('../static/image.png');
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+}
+
+.add-artwork h1 {
+    text-align: center;
+    color:black;
+    margin-bottom: 20px;
+}
+
+.add-artwork form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.add-artwork label {
+    font-weight: bold;
+    color:black;
+    margin-bottom: 5px;
+}
+
+.add-artwork input,
+.add-artwork textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.add-artwork textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+.add-artwork button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-artwork button:hover {
+    background-color: #45a049;
+}
+
+.add-artwork .message {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+ 

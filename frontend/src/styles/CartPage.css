@@ -1,0 +1,40 @@
+/* CartPage.css */
+
+.cart-items {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    gap: 20px; /* Space between items */
+  }
+  
+  .cart-item {
+    display: flex;
+    border: 1px solid #ccc; /* Border for each item */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px; /* Padding inside each item */
+    align-items: center; /* Center content vertically */
+  }
+  
+  .cart-item-image {
+    width: 200px; /* Set width for square images */
+    height: 200px; /* Set height to match width */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+    margin-right: 20px; /* Space between image and text */
+  }
+  
+  .cart-item-details {
+    flex-grow: 1; /* Allow details to take up available space */
+  }
+  
+  .cart-item button {
+    background-color: #ff4f4f; /* Red button */
+    color: white; /* White text */
+    border: none; /* No border */
+    padding: 10px; /* Padding for the button */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+  }
+  
+  .cart-item button:hover {
+    background-color: #ff0000; /* Darker red on hover */
+  }
+  

@@ -1,0 +1,128 @@
+.dashboard-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  height: 100vh; /* Full viewport height */
+  padding: 10px; /* Minimal padding */
+  box-sizing: border-box;
+  overflow: hidden; /* Prevent overflow */
+}
+
+.profile-container,
+.statistics-container {
+  flex: 0 0 50%; /* Each container takes up 50% of the width */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border-radius: 10px;
+  padding: 10px; /* Minimal padding */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  height: calc(100% - 30px); /* Adjusted for padding */
+}
+
+.profile-card {
+  width: 100%;
+}
+
+.profile-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px; /* Standard margin for better spacing */
+}
+
+.profile-image-container {
+  margin-bottom: 8px; /* Balanced gap between the image and elements */
+}
+
+.profile-image {
+  width: 70px; /* Adjusted size for better fit */
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ccc; /* Standard border */
+}
+
+.profile-body {
+  text-align: center;
+  font-size: 0.9rem;
+  width: 90%; /* Ensure responsiveness */
+  margin-top: 5px; /* Balanced spacing between elements */
+}
+
+.image-upload-container {
+  margin-top: 5px; /* Consistent gap */
+}
+
+.file-label {
+  cursor: pointer;
+  color: #007bff;
+  font-size: 0.8rem; /* Slightly smaller font */
+}
+
+.file-input {
+  display: none;
+}
+
+.info {
+  margin-bottom: 10px; /* Balanced spacing for fields */
+}
+
+.input-field {
+  width: 100%; /* Full width */
+  padding: 5px;
+  margin: 5px 0; /* Balanced margin */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.button-group {
+  display: flex;
+  gap: 5px; /* Balanced gap between buttons */
+  justify-content: center;
+  margin-top: 10px; /* Consistent spacing */
+}
+
+.save-button,
+.cancel-button,
+.edit-button {
+  padding: 5px 10px; /* Compact button sizes */
+  font-size: 0.8rem; /* Standard font size */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.save-button {
+  background: #28a745;
+  color: #fff;
+}
+
+.cancel-button {
+  background: #dc3545;
+  color: #fff;
+}
+
+.edit-button {
+  background: #007bff;
+  color: #fff;
+}
+
+.statistics-card {
+  margin-bottom: 10px; /* Standard gap */
+  text-align: center;
+}
+
+.statistics-card h3 {
+  margin-bottom: 5px; /* Balanced gap */
+  font-size: 1rem;
+}
+
+.statistics-item {
+  font-size: 0.9rem;
+  margin-bottom: 5px; /* Consistent margin */
+}

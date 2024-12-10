@@ -1,0 +1,45 @@
+.my-artworks {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+.my-artworks h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.artworks-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.artwork-card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.artwork-card img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.artwork-card h2 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.artwork-card p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #555;
+}

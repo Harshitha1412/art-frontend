@@ -1,0 +1,29 @@
+
+/* Navbar styles */
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Space between items */
+    align-items: center; /* Center items vertically */
+    background-color: #1f1f1f; /* Darker background for navbar */
+    padding: 10px 20px; /* Padding for navbar */
+}
+
+.navbar-brand {
+    font-size: 24px; /* Bigger font for the brand */
+    font-weight: bold; /* Bold font for emphasis */
+}
+
+.navbar-links {
+    display: flex; /* Flex for the links */
+}
+
+.navbar-links a {
+    color: white; /* White links */
+    text-decoration: none; /* Remove underline from links */
+    margin: 0 15px; /* Space between links */
+    transition: color 0.3s; /* Smooth color change */
+}
+
+.navbar-links a:hover {
+    color: #ffcc00; /* Change color on hover */
+}
